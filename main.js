@@ -18,7 +18,7 @@ function createWindow () {
         resizable: false
     });
 
-    mainWindow.loadURL(path.join(__dirname, 'src/html/index.html'));
+    mainWindow.loadFile(path.join(__dirname, 'src/html/index.html'));
 
     mainWindow.on('closed', () => {
         mainWindow = null
